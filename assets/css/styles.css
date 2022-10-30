@@ -921,12 +921,9 @@ transform: translate(.55rem);
     .testimonial__description{
         text-align:center;
     }
-    /* roshan investment */
-    .my__logo{
-            width: 25%;
-            position: fixed;
-            bottom: 0px;
-        }
+    .my__logo {
+      margin-bottom: 19px;
+    }
 
     
 }
@@ -959,13 +956,10 @@ transform: translate(.55rem);
         justify-content: center;
 
     }
+    .my__logo {
+      margin-bottom: 19px;
+    }
 
-    /* roshan investment */
-    .my__logo{
-            width: 20%;
-            position: fixed;
-            bottom: 0px;
-        }
 
 }
 
@@ -993,7 +987,7 @@ transform: translate(.55rem);
         padding: 0 1rem;
     }
     .nav{
-        height: calc(var(--header-height)+1.5rem);
+        /*height: calc(var(--header-height)+1.5rem);*/
         column-gap: 1rem;
     }
     .nav__icon,
@@ -1106,11 +1100,9 @@ transform: translate(.55rem);
     }
 
         /* roshan investment */
-    .my__logo{
-            width: 20%;
-            position: fixed;
-            top: 0px;
-        }
+    .my__logo {
+        margin-top: 24px;
+    }
 
 }
 /* For large devices */
@@ -1150,6 +1142,11 @@ transform: translate(.55rem);
     }
     .contact__inputs{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* roshan investment */
+    .my__logo {
+        margin-top: 24px;
     }
     
 
