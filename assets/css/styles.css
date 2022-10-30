@@ -1103,6 +1103,10 @@ transform: translate(.55rem);
     .my__logo {
         margin-top: 24px;
     }
+    .banner{
+        content: url('../img/banner300by50.png');
+    }
+
 
 }
 /* For large devices */
@@ -1148,6 +1152,11 @@ transform: translate(.55rem);
     .my__logo {
         margin-top: 24px;
     }
+    
+     .banner{
+        content: url('../img/banner300by50.png');
+    }
+
     
 
 }
