@@ -110,6 +110,10 @@ let swiperTestimonial = new Swiper(".testimonial__container ", {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
+    autoplay: {
+        delay: 4500,
+        disableOnInteraction: false,
+      },
     pagination: {
       el: ".swiper-pagination",
       clickable:true,
@@ -178,3 +182,60 @@ themeButton.addEventListener('click',()=>{
     localStorage.setItem('selected-theme',getCurrentTheme())
     localStorage.setItem('selected-icon',getCurrentIcon())
 })
+
+
+
+/*==================== SLIDER ====================*/ 
+
+let slides = document.getElementsByClassName('slides');
+
+let navlinks = document.getElementsByClassName('slideDot');
+let currentSlide = 0;
+
+document.getElementById('next').addEventListener('click',()=>{
+    changeSlide(currentSlide +1);
+});
+
+document.getElementById('prev').addEventListener('click',()=>{
+    changeSlide(currentSlide - 1);
+});
+
+function changeSlide(currentSlideValue){
+    if(currentSlideValue >= slides.length){
+        currentSlideValue = 0;
+    }
+    if(currentSlideValue < 0){
+        currentSlideValue = slides.length-1;
+    }
+    
+    slides[currentSlide].classList.toggle('active');
+    navlinks[currentSlide].classList.toggle('activeDot');
+    slides[currentSlideValue].classList.toggle('active');
+    navlinks[currentSlideValue].classList.toggle('activeDot');
+    currentSlide = currentSlideValue;
+}
+
+document.querySelectorAll(".slideDot").forEach((bullet,bulletIndex)=>{
+    bullet.addEventListener('click',()=>{
+        if(currentSlide != bulletIndex){
+            changeSlide(bulletIndex);
+        }
+    });
+});
+
+window.onload = setInterval(function(){
+    changeSlide(currentSlide+1)
+    
+},4300);
+
+
+window.onload = function() {
+    var audio = document.getElementById("my_audio");
+    audio.volume = 0.3;
+    audio.play();
+}
+
+
+
+
+
