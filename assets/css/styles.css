@@ -115,7 +115,6 @@ body {
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
   color: var(--text-color);
-    overflow-x: hidden; 
 }
 
 h1, h2, h3, h4 {
@@ -1449,3 +1448,14 @@ border: solid 2px #cc1f00;
   
 
 /* ------------------------------------------------------------------------------ */
+
+/* -------------------------Audio-------------------------- */
+#music-play1{
+    position:fixed;
+    z-index: 1000; 
+    bottom:8rem;
+    right:1rem;
+    color:white;
+    font-size: 1.5em;
+    opacity: 0.5;
+    }
