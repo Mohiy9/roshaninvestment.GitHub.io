@@ -24,9 +24,10 @@
         <link rel="stylesheet" href="assets/css/styles.css">
         
 
-        <title>Responsive Portfolio Website</title>
+        <title>Roshan Investment</title>
+        <link rel="icon" type="image/x-icon" href="/assets/img/favcon/favicon.ico"/>
     </head>
-    <body style="overflow-x:hidden;">
+    <body>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
@@ -78,12 +79,12 @@
         <!--==================== MAIN ====================-->
         <main class="main">
             <!--==================== HOME ====================-->
-            <section  id="home">
+            <section  id="home" >
                     <!-- Slider -->
-                <div class="swiper-container">
+                <div class="swiper-container" >
                 
                     <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
+                    <div class="swiper-wrapper" >
                     <!-- Slides -->
                     <div class="swiper-slide slide-1 swiper-slide-size" data-title="Ultimate Profit <br> " data-subtitle="Daily Profitable Trade">
                         <img id= "slider-image-mobile-1" class="slider-image" src="assets/img/slides/slidegif4.gif" alt="">
@@ -107,6 +108,12 @@
                     <div class="swiper-button-next"></div>
                     
                 </div>
+                <div id="music-play1">
+                    <span onClick="Play()"><i id="aud" class="uil uil-volume-mute"></i></span>
+                    <audio  id="audioval" loop>
+                      <source src="C:\Users\Police(Cyber Deprt.)\Desktop\RoshanInvestment\assets\img\slides\stock1.mp3" type="audio/mp3">
+                    </audio>
+                <div>
             </section>
             <!--==================== SERVICES ====================-->
             <section class=" section" id="services">
@@ -120,7 +127,7 @@
                             
                             <span style="display:block" class="button button--flex button--small button--link services__button">
                                 <img id="silver-course-img"  class ="service-img" src="assets/img/courses/silvercrop.png" alt="">
-                                <br> Click here for More Details
+                                 <br> Click For More details
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </span>
                             <h4 class="services__title">Price : <sub><s style="color:grey"> ₹ 4000</s></sub> ₹ 2000</h4>
@@ -130,25 +137,25 @@
 
                         <div class="services__modal">
                             <div class="services__modal-content">
-                                <h4 class="services__modal-title">Silver Package</h4>
+                                <h4 class="services__modal-title">Ui/Ux<br> Designer</h4>
                                 <i class="uil uil-times services__modal-close"></i>
-                                <hr>
+
                                 <ul class="services__modal-services grid">
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p> 1. Something here</p>
+                                        <p> I developed the user interface</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>2. Something here</p>
+                                        <p> Web page Interface</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>3. Something here</p>
+                                        <p> I created ux element interface</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>4. Something here</p>
+                                        <p> position of the company brand</p>
                                     </li>
                                 </ul>
                             </div>
@@ -157,10 +164,9 @@
                     <!--=========Service 2 =======-->
                     <div class="services__content">
                         <div>
-                            
-                            <span style="display:block" class="button button--flex button--small button--link services__button">
-                                <img class ="service-img" src="assets/img/courses/platinumcrop.png" alt="">
-                                <br> Click here for More Details
+                            <img class ="service-img" src="assets/img/courses/platinumcrop.png" alt="">
+                            <span class="button button--flex button--small button--link services__button">
+                                View More
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </span>
                             <h4 class="services__title">Price : <sub><s style="color:grey"> ₹ 6000</s></sub> ₹ 3000</h4>
@@ -170,25 +176,26 @@
 
                         <div class="services__modal">
                             <div class="services__modal-content">
-                                <h4 class="services__modal-title">Platinum <br>Package</h4>
+                                <h4 class="services__modal-title">Frontend<br>Developer</h4>
                                 <i class="uil uil-times services__modal-close"></i>
+                                <hr>
 
                                 <ul class="services__modal-services grid">
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p> 1. Something here</p>
+                                        <p> I developed the user interface</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p> 2. Something here</p>
+                                        <p> Web page Interface</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p> 3. Something here</p>
+                                        <p> I created ux element interface</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>4. Something here</p>
+                                        <p> position of the company brand</p>
                                     </li>
                                 </ul>
                             </div>
@@ -197,10 +204,9 @@
                     <!--=========Service 3  =======-->
                     <div class="services__content">
                         <div>
-                            
-                            <span style="display:block" class="button button--flex button--small button--link services__button">
-                                <img  class ="service-img" src="assets/img/courses/goldcrop.png" alt="">
-                                <br>Click here for More Details
+                            <img  class ="service-img" src="assets/img/courses/goldcrop.png" alt="">
+                            <span class="button button--flex button--small button--link services__button">
+                                View More
                                 <i class="uil uil-arrow-right button__icon"></i>
                             </span>
                             <h4 class="services__title">Price : <sub><s style="color:grey"> ₹ 8000</s></sub> ₹ 4000</h4>
@@ -210,25 +216,25 @@
 
                         <div class="services__modal">
                             <div class="services__modal-content">
-                                <h4 class="services__modal-title">Gold <br>Package</h4>
+                                <h4 class="services__modal-title">Backend<br>Developer</h4>
                                 <i class="uil uil-times services__modal-close"></i>
 
                                 <ul class="services__modal-services grid">
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>1. Something here </p>
+                                        <p> I developed the user interface</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p>2. Something here</p>
+                                        <p> Web page Interface</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p> 3.  Something here</p>
+                                        <p> I created ux element interface</p>
                                     </li>
                                     <li class="services__modal-service">
                                         <i class="uil uil-check-circle services__modal-icon"></i>
-                                        <p> 4. Something here</p>
+                                        <p> position of the company brand</p>
                                     </li>
                                 </ul>
                             </div>
@@ -492,11 +498,17 @@
         <script>
                 var mySwiper = new Swiper ('.swiper-container', {
                 // Optional parameters
-                    effect:"cube",
+                effect:"cube",
                 direction: 'horizontal',
                 loop: true,
                 speed: 1200,
                 grabCursor: true,
+                cubeEffect: {
+   shadow: true,
+   slideShadows: true,
+   shadowOffset: 20,
+   shadowScale: 0.94,
+ },
             autoplay: {
                     delay: 4500,
                     disableOnInteraction: false,
