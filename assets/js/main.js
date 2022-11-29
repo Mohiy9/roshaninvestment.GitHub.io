@@ -236,6 +236,30 @@ window.onload = function() {
 }
 
 
+// ---------------------audio------------------
+
+function Play()
+{
+    var myAudio = document.getElementById("audioval");
+    myAudio.volume = 0.1;
+  var aud = document.getElementById("aud");
+  
+
+    if(myAudio.paused)
+    {
+
+      aud.classList.remove("uil-volume-mute");
+        myAudio.play();
+      aud.classList.add("uil-volume-up");
+console.log(aud);
+    }
+    else
+    {
+      aud.classList.remove("uil-volume-up");
+       myAudio.pause();
+      aud.classList.add("uil-volume-mute");
+    }
+}
 
 
 
