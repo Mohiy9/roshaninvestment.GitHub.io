@@ -986,7 +986,9 @@ transform: translate(.55rem);
     .my__logo {
       margin-bottom: 19px;
     }
-
+  .column-myfooter {
+    width: 100%;
+  }
 
 }
 
